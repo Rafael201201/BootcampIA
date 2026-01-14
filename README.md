@@ -1,22 +1,22 @@
 # Clase IA
-## 🤖 Comando consola
-### ![Python](image.png)
+## 🤖 Comandos consola
+ ![Python](image.png)
 ```
 python --version
-
+ 
 ```
-
-![Git](image-4.png)
+![alt text](image-3.png)
 ```
-
-git --version
-git --init
+ 
+git --version 
+git init 
 git add .
  git commit -m "nombre del commit"
 ```
-![alt text](image-1.png)
+![alt text](image-4.png)
 ```
 git branch -M main
-git remote add origin https://github.com/Rafael201201/BootcampIA.git
+git remote add origin https://github.com/fernandogh7508/IAG344.git
 git push -u origin main
+git push -u origin master
 ```
