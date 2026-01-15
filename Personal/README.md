@@ -22,3 +22,6 @@ git push -u origin master
 
 "Main es la rama principal donde se sube todo ya funcional, y la Master es donde hago mis pruebas y ya cuando esten funcionales las actualizo a la rama main"
 ```
+```
+Powershell
+set-ExecutionPolicy Unrestricted y luego s para permitir el uso de scripts
