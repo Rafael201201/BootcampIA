@@ -25,3 +25,9 @@ git push -u origin master
 ```
 Powershell
 set-ExecutionPolicy Unrestricted y luego s para permitir el uso de scripts
+
+#activar entorno virtual
+env3.14.0\scripts\activate
+
+#desactivar entorno virtual
+deactivate
