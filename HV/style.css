@@ -10,3 +10,14 @@
 /* .imagen{
     max-width: 20%; de esta forma reduzco tamaño de la imagen 
 } */  
+
+/* Opacidad barra progreso */
+.progress{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+/* Color del fondo col izquierda */
+.text-primary{
+    color: rgb(39, 123, 187) !important;
+}
