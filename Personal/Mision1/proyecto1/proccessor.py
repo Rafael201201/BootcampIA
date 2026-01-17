@@ -23,6 +23,7 @@ def merge_name(name, lastname):
 
 def proccess_excel(path):
     #Acceso a la hoja llamada "datos"
+    wb = load_workbook(path)
     ws = wb["Datos"]
     #Recorrer todas las filas desde la fila 2
     for row in range(2,ws.max_row+1):
@@ -33,4 +34,22 @@ def proccess_excel(path):
         ws[f"B{row}"].value,
         ws[f"C{row}"].value,
         )
+    #Guarde los cambios en el mismo archivo
+    wb.save(path)
+
+def process_excel_safe(path):
+    try:
+        proccess_excel(path)
+        return True, "Archivo procesado correctamente" 
+    except PermissionError:
+        return(
+            False,
+            "El archivo Excel está abierto.\n"
+            "por Favor, Ciérrelo e intente nuevamente."
+        )
+    except KeyError:
+        return False, "Hoja 'Datos' no encontrada"
+    except Exception as e:
+        return False, f"Error inesperado: {str(e)}"
+    
       
