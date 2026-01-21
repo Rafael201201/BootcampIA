@@ -34,5 +34,13 @@ def predict_answer(model, verctorizer,unique_answers,user_text):
 # Programa principal
 if __name__ == "__main__":
     training_data =[
-        ("hola","!Hola¡ ¿En que puedo ayudarte?")
+    ("hola","!Hola¡ ¿En que puedo ayudarte?")
+    ("hola", "¡Hola! ¿En qué podemos ayudarte hoy?"),
+    ("buenos días", "Buenos días, gracias por contactarnos. ¿Cómo podemos asistirte?"),
+    ("buenas tardes", "Buenas tardes, es un gusto atenderte. ¿Qué consulta tienes?"),
+    ("buenas noches", "Buenas noches, estamos a tu disposición. ¿En qué podemos ayudarte?"),
+    ("información", "Con gusto te brindamos la información que necesitas. ¿Sobre qué tema?"),
+    ("soporte", "Nuestro equipo de soporte está listo para ayudarte. Cuéntanos tu inconveniente."),
+    ("precio", "Con gusto te compartimos nuestros precios. ¿Qué servicio te interesa?"),
+    ("gracias", "Gracias a ti por comunicarte con nosotros. ¡Que tengas un excelente día!")
     ]
